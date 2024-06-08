@@ -1,0 +1,111 @@
+:root{
+    --bg-color:hsl(0, 20%, 98%);
+    --border-color:#cacaca;
+}
+.score{
+    width: 400px;
+}
+.score .election-result{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 8px;
+}
+.score .election-result span{
+    font-size: 1.4rem;
+    color: hsl(0, 96%, 44%);
+    position: relative;
+    margin-left: 5px;
+}
+.score .election-result span::before{
+    content: '_';
+    position: absolute;
+    left:-10px;
+    background-color:green;
+    color:green;
+    clip-path: circle(4px);
+    animation: LIVE 1s infinite ;
+}
+@keyframes LIVE {
+    0%,100%{
+        opacity: 0;
+    }
+    40%,60%{
+        opacity: 1;
+    }
+
+}
+
+.party_bar{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    height: 8px;
+    background-color: var(--border-color);
+}
+.party_bar::before{
+    content: ':';
+    position: absolute;
+    font-size: .7rem;
+    top:-5px;
+    left:50%;
+    text-align: right;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 700;
+}
+.party_name{
+    margin: 8px 0;
+    padding-right: 12%;
+    display:flex;
+    justify-content: space-between;
+}
+.party_name > div{
+    font-weight: 700;
+    padding: 2px 6px;
+    border-left: 1.5px solid var(--border-color);
+}
+.party_name > div:first-child{
+    border-left:none;
+}
+
+.poll_bar{
+    background-color: var(--bg-color);
+    position: relative;
+    padding: 8px;
+    border:1.5px solid var(--border-color);
+}
+.poll_name{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+.poll_name div{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.half_cnt{
+    text-align:center;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.live-update{
+    position:absolute;
+    border:1.5px solid var(--border-color);
+    background-color:var(--bg-color);
+    border-radius: 50px;
+    padding: 0 6px;
+    font-weight:600;
+    font-size: .9rem;
+    bottom:0;
+    transform: translateY(50%);
+}
+.live-update span{
+    font-weight: 700;
+    color:red;
+}
+span img{
+    width: 12px;
+    transform: translateY(2px);
+}

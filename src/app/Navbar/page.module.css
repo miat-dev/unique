@@ -1,0 +1,40 @@
+.container {
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .1);
+    border-radius: 8px;
+}
+
+.tab_box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(229, 229, 229);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tab_box .tab_btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #919191;
+    padding: 18px;
+
+}
+
+.tab_box .active {
+    color: #7360ff;
+}
+
+.tab_box .line {
+    position: absolute;
+    top: 56px;
+    left: 7px;
+    width: 87px;
+    height: 4px;
+    background: #7360ff;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+

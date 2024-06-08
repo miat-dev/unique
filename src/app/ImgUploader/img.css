@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #c487ab;
+}
+
+.input_wrap button {
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: white;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+}
+.input_wrap button:active{
+    color: transparent;
+}
+
+.input_wrap {
+    display: grid;
+    justify-items: center;
+
+}
+
+.input_area {
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+}
+
+.drag-area {
+    background-color: #c2c2be;
+    border: 2px dashed #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4px;
+    padding: 1vmax;
+}
+
+.drag-area.active {
+    border: 2px solid #fff;
+}
+
+.drag-area .icon {
+    font-size: 100px;
+    color: #fff;
+}
+
+.drag-area header {
+    text-align: center;
+    width: 350px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.drag-area button {
+    color: #5256ad;
+}
+
+.drag-area span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+
+.drag-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.input_wrap .upload {
+    padding: 5px 10px;
+    background-image: linear-gradient(90deg,#7575da,#35359d);
+}
+
+.input_wrap .remove_selection {
+    padding: 5px 10px;
+    background-image: linear-gradient(90deg,#e74951,#b20911);
+}

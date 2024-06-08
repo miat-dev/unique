@@ -1,0 +1,87 @@
+.gu_main {
+    width: 360px;
+    background-color: #cdcdcd;
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    z-index: 5;
+    border-radius: 4px;
+    color: white;
+    overflow: hidden;
+}
+
+.gu_main .gu_toph {
+    position: relative;
+    display: flex;
+    border-radius: 4px;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #202124;
+}
+.gu_main .gu_toph div:first-child{
+    padding: 6px;
+    padding-left: 0;
+}
+.gu_main .gu_toph div:last-child button {
+    margin:.5em 1.2em;
+}
+
+.gu_main .gu_toph div:last-child button:last-child {
+    margin-right: 0em;
+}
+
+.gu_bottomh{
+    height:330px;
+    color: #123;
+    margin:0 2px;
+    background-color: #f1f3f4;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.gu_bottomh_h_zero{
+    height:0px;
+}
+
+.gu_time_left{
+    display: flex;
+    justify-content: space-between;
+    padding:.2em 1em;
+    /* border-bottom: 1px solid #dadce0; */
+}
+.gu_time_left button{
+    color: blue;
+}
+.gu_upload_files{
+    background-color:#ffffff;
+    overflow-y: auto;
+    padding: 0 4px;
+}
+.gu_file_dt{
+    display: flex;
+    border-top: 1px solid #dadce0;
+    justify-content:space-between;
+    padding: .8em .8em;
+}
+.gu_file_dt div{
+    display: flex;
+}
+.gu_file_dt div > div{
+    margin-left: 1em;
+}
+.gu_file_dt img{
+    width: 24px;
+}
+.trans_btn {    
+    background-color: #1d3ea1;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+.trans_btn:active , .trans_btn:focus{
+    outline:none;
+}
+.trans_btn:active{
+    color: transparent;
+}
